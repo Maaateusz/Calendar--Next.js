@@ -1,0 +1,71 @@
+
+.main{
+    /* background-color: rgb(231, 221, 201); */
+    background-color: rgba(231, 221, 201, 1);
+    background-image: radial-gradient(circle, rgba(231, 221, 201, 1) 0%, rgba(198, 177, 145, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar{
+    background-color: rgb(180, 167, 142);
+    min-width: 550px;
+    max-width: 1100px;
+    /* width: 95vw; */
+    width: 95%;
+    padding: 10px;
+    border-radius: 8px 50px 8px 50px;
+    overflow: hidden;
+    
+    -webkit-box-shadow: 0px 10px 18px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 10px 18px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 10px 18px 0px rgba(66, 68, 90, 1);
+}
+
+.calenderInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#currentDate{
+    font-size: xx-large;
+    word-spacing: 0.4rem;
+    text-shadow: 0px 2px 7px rgba(66, 68, 90, 1);
+    /* margin-bottom: 30%; */
+}
+
+#currentMonthYear{
+    font-size: xx-large;   
+    padding: 5px; 
+    margin: 5px;
+}
+
+.changeMonth{
+    font-size: 2rem;
+    color: black;
+}
+
+.changeMonth:active{
+    color: rgb(231, 221, 201);
+}
+
+#prevMonth, #nextMonth{
+    padding: 5px; 
+    margin: 0;
+    cursor: pointer;
+}
+
+
+/* #nextMonth{
+    padding: 5px; 
+    margin: 5px;
+} */
+

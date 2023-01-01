@@ -1,0 +1,39 @@
+.weekDays{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-bottom: 1px solid gray;
+    font-family: Helvetica, Sans-serif;
+}
+
+.weekDay{
+    /* margin: 0px; */
+    margin: auto;
+    /* margin-top: 5px; */
+    /* margin-bottom: 5px; */
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-size: clamp(0.5rem, -0.2rem + 2.5vw, 1.2rem);
+    width: calc(100% / 7 - 1px);
+    border-right: 1px solid gray;
+    overflow-x: hidden;
+}
+
+/* sobota */
+.weekDay:nth-child(6){
+    color: blue;
+    background-color: rgb(142, 166, 180);
+}
+
+/* niedziela */
+.weekDay:nth-child(7){
+    border-right: none;
+    color: darkred;
+    background-color: rgb(180, 142, 142);
+}
